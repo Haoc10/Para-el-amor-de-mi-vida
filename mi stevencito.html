@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Océano de Amor para Steven</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #b3ecff 0%, #0077be 100%);
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 3em;
+      text-shadow: 2px 2px #004b6b;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.5em;
+      max-width: 600px;
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 20px;
+      backdrop-filter: blur(6px);
+    }
+
+    .fish {
+      position: absolute;
+      width: 50px;
+      animation: swim 20s linear infinite;
+    }
+
+    .fish img {
+      width: 100%;
+    }
+
+    @keyframes swim {
+      0% {
+        left: -60px;
+        top: calc(10% + 80px);
+        transform: scaleX(1);
+      }
+      50% {
+        top: 40%;
+      }
+      100% {
+        left: 110%;
+        top: 70%;
+        transform: scaleX(-1);
+      }
+    }
+
+    .heart {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-size: 2.5em;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Steven, mi amor 🌊</h1>
+
+  <p>
+    En este océano lleno de estrellas marinas y corales suaves, te recuerdo que te amo con todo mi corazón. 
+    Eres mi playa segura, mi faro en la tormenta y la marea que me abraza cuando más lo necesito. <br><br>
+    Gracias por hacerme tan feliz, por ser ternura, luz y risa en mi vida. Te amo, Steven. Para siempre. 💘
+  </p>
+
+  <div class="fish" style="top: 30%; left: 0;"><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="pez" /></div>
+  <div class="fish" style="top: 50%; left: -100px;"><img src="https://cdn-icons-png.flaticon.com/512/616/616430.png" alt="pez" /></div>
+  <div class="fish" style="top: 70%; left: -200px;"><img src="https://cdn-icons-png.flaticon.com/512/616/616443.png" alt="pez" /></div>
+
+  <div class="heart">💖</div>
+
+</body>
+</html>
